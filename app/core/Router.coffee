@@ -141,7 +141,7 @@ module.exports = class CocoRouter extends Backbone.Router
 
     'github/*path': 'routeToServer'
 
-    'hoc': -> @navigate "/play?hour_of_code=true", {trigger: true, replace: true}
+    'hoc': -> @navigate "/play/hoc-2018", {trigger: true, replace: true}
     'home': go('HomeView')
 
     'i18n': go('i18n/I18NHomeView')
@@ -183,8 +183,8 @@ module.exports = class CocoRouter extends Backbone.Router
     'play/spectate/:levelID': go('play/SpectateView')
     'play/:map': go('play/CampaignView')
 
-    'premium': go('PremiumFeaturesView')
-    'Premium': go('PremiumFeaturesView')
+    'premium': go('PremiumFeaturesView', { redirectStudents: true, redirectTeachers: true })
+    'Premium': go('PremiumFeaturesView', { redirectStudents: true, redirectTeachers: true })
 
     'preview': go('HomeView')
 
