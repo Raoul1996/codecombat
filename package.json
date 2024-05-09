@@ -131,7 +131,7 @@
     "stream-buffers": "0.2.x",
     "stripe": "~2.9.0",
     "style-loader": "^0.13.1",
-    "swagger-ui-express": "^1.0.0",
+    "swagger-ui-express": "^4.3.0",
     "three": "^0.71.0",
     "treema": "https://github.com/codecombat/treema.git",
     "tv4": "~1.0.16",
